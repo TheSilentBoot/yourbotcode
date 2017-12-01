@@ -6,11 +6,17 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
 });
 
+let messagesSeen = 0;
 
 client.on("message", async (message) => {
   if (message.author.id === "1234567890") { // Users ID
-    message.channel.send("I love you"); // Message no mention
-    // message.reply("I love you"); // Message with mention
+    messagesSeen += 1;
+    if (messagesSeen >= 5) {
+      messagesSeen = 0;
+      message.channel.send("I love you").then(msg => {
+        msg.delete(30 * 1000);
+      });
+    }
   }
 });
 
