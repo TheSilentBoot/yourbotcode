@@ -1,0 +1,22 @@
+{
+  "name": "yourbotcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSilentBoot/yourbotcode.git"
+  },
+  "author": "TheSilentBoot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSilentBoot/yourbotcode/issues"
+  },
+  "homepage": "https://github.com/TheSilentBoot/yourbotcode#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
